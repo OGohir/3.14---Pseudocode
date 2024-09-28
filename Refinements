@@ -1,0 +1,169 @@
+Refinement 1:
+
+integer variable declarations for width, length, steps
+
+asks user for width
+take user input, length is equal to user input
+
+asks user for length
+take user input, width is equal to user input
+
+if the length is greater than the width, 
+	swap the length and the width using another variable so that the numbers arent mixed up, 
+	length equals orignal width value, width equals original length value
+
+
+when the width modulo lengths remainder is not equal to 0; it cant be divided into a whole number,
+	find how many times length is in width
+	use that number to multiply with length and subtract width to find how many tiles not covered which is now the new Length
+	new Width equals to old length value, whcih is original length that user gave
+
+	increase the step count by 1, to show user how much steps they took.
+	print steps
+	
+	print how many steps it took, the width and the length for easier counting
+
+	used to loop until remainder is 0
+	length equals the new Length, to repeat code again
+	width equals the new Width, to repeat code again
+
+ends the loop
+
+print length value
+	
+
+Refinement 2:
+
+integer variable, width
+integer variable, length
+integer variable, steps
+
+print "length: "
+length is equal to user input
+
+print "width: "
+width is equal to user input
+
+if statement
+the length is greater than the width; switch dimension so width isnt the same value of length
+
+	integer variable switchdimension equals length
+	length equals width
+	width equals original length value (switchdimension)
+
+
+loop:
+width modulo length does not have a remainder of 0 (looking at the remainder of width and length)
+
+	integer variable leftOverDimension equals how many times width is in length
+	integer variable newLength equals remaining tiles
+	integer variable newWidth equals original length
+	
+	steps increase by 1 each time
+	print (each step, and the length and width of each step)
+
+	length equals the newLength
+	width equals the newWidth
+
+end loop
+
+print (length)
+
+
+Refinement 3:
+
+variable width, length, steps
+
+print ("length:")
+length equals user input
+
+print ("width:")
+width equals user input
+
+if the length is greater than width
+
+	integer switchDimension variable equals length
+	length equals width
+	width equals switchedDimension
+
+loop width % length does not equal 0
+
+	integer variable leftOverDimension equals width divided by length
+	integer variable newLength equals width subtract length multiplied by leftOverDimension
+	ineger variable newWidth equals original length
+
+	steps increament by 1 each time
+	print (steps, length, width)
+
+	length equasls new value of Length
+	width equals new value of Width
+
+print (length)
+
+Refinement 4:
+
+integer width
+integer length
+integer steps
+
+print("Length: ")
+length equals input
+
+print("Width: ")
+width equals input
+
+if length greater than width
+	
+	integer switch_dimension equals length
+	length equals width
+	width equals switched_dimension
+
+loop:
+	width % length doesnt equal 0
+
+	integer leftOverDimension equals width divided length
+	integer newLength equals width subtract length multipled leftOverDimension
+	integer newWidth equals length
+
+	steps increament 1
+	print("Steps: ", integer steps , "length: ", integer length, "width: ", integer width)
+
+	length equals newLength
+	width equals newWidth
+
+print ("Final ", length)
+
+Refinement 5:
+
+int width
+int length
+int steps
+
+print ("Length: ")
+length = user input
+
+print ("Width: ")
+width = user input
+
+if length > width
+	switch_dimension = length
+	length = width
+	width = switch_dimension
+
+while loop:
+	width % length != 0
+	int leftOverDimension = width / length
+	int newLength = width - (length x leftOverDimension)
+	int newWidth = length
+
+	steps++
+	print ("Steps: " + steps + "Length: " + length + "Width: " + width)
+
+	length = newLength
+	width = newWidth
+
+print (length)
+	
+
+
+
